@@ -1,0 +1,4 @@
+Type 'run' to play the game.
+There are some questions for you: You are asked a country, you answer the name of the continent.
+Answer as many as you can.
+You get your score at the end.
