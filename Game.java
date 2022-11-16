@@ -16,12 +16,11 @@ public class Game {
 			br = new BufferedReader(new FileReader("continents.csv"));
 			String line;
 			while ((line = br.readLine()) != null) {
-				total++;
 				String[] cols = line.split(",");
 				String country = cols[0];
 				String continent = cols[1];
 				String answer = console.readLine("which continent does " + country + " belong to? ");
-				if(answer.equalsIgnoreCase("exit")){
+				if (answer.equalsIgnoreCase("exit")) {
 					break;
 				}
 				if (answer.equalsIgnoreCase(continent)) {
@@ -30,6 +29,7 @@ public class Game {
 				} else {
 					System.out.println("No, the answer is " + continent);
 				}
+				total++;
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
